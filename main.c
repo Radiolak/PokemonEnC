@@ -212,14 +212,14 @@ int Personnage_load(Personnage *perso, const char *path) {
     }
 
     // Lecture des statistiques du personnage
-if (fscanf(fichier, "vie %d\n", &perso->Stats.vie) != 1 ||
-    fscanf(fichier, "atk %d\n", &perso->Stats.atk) != 1 ||
-    fscanf(fichier, "def %d\n", &perso->Stats.def) != 1 ||
-    fscanf(fichier, "vit %d\n", &perso->Stats.vit) != 1) {
-    fprintf(stderr, "Erreur de lecture des statistiques du personnage dans le fichier %s.\n", path);
-    fclose(fichier);
-    return 0;
-}
+    if (fscanf(fichier, "vie %d\n", &perso->start.vie) != 1 ||
+        fscanf(fichier, "atk %d\n", &perso->start.atk) != 1 ||
+        fscanf(fichier, "def %d\n", &perso->start.def) != 1 ||
+        fscanf(fichier, "vit %d\n", &perso->start.vit) != 1) {
+        fprintf(stderr, "Erreur de lecture des statistiques du personnage dans le fichier %s.\n", path);
+        fclose(fichier);
+        return 0;
+    }
 	// Lecture des capacités du personnage
     for (int i = 0; i < perso->nb_caps; ++i) {
         char capPath[256];  // Ajustez la taille selon vos besoins
