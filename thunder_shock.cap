@@ -1,0 +1,3 @@
+nom ThunderShock
+action $other.vie -= ($self.atk * 12 + 40) / $other.def + 1
+message $self utilise Éclair Puissant!

@@ -1,0 +1,5 @@
+nom Se renforcer
+action $self.atk = $self.atk * 1.1 + $self.def / 10 + 1
+action $self.def = $self.def * 1.1 + $self.vie / 10 + 1
+action $self.vit = $self.vit / 1.1 - 1
+message $self se renforce .

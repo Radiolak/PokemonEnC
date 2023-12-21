@@ -1,0 +1,4 @@
+nom Effrayer
+action $other.atk = $other.atk * 0.9 - 1
+action $other.def = $other.def * 0.9 - 1
+message $self effraie $other .

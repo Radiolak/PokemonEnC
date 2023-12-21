@@ -1,0 +1,22 @@
+name : Aquariusaur
+vie : 180
+atk : 60
+def : 70
+vit : 8
+face : {
+    circle 0, 0, 30 rgba 0, 128, 255, 255
+    circle -12, 8, 5 rgba 255, 255, 255, 255
+    circle 12, 8, 5 rgba 255, 255, 255, 255
+    polygon 3 -8, -12, 0, -8, 8, -12 rgba 0, 255, 0, 255
+}
+back : {
+    circle 0, 0, 30 rgba 0, 128, 255, 255
+    circle -12, 8, 5 rgba 255, 255, 255, 255
+    circle 12, 8, 5 rgba 255, 255, 255, 255
+    polygon 3 -8, -12, 0, -8, 8, -12 rgba 0, 255, 0, 255
+}
+capacities : {
+    load aqua_jet.cap
+    load hydro_pulse.cap
+    load tidal_wave.cap
+}

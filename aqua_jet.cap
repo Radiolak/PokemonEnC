@@ -1,0 +1,3 @@
+nom AquaJet
+action $other.vie -= ($self.atk * 10 + 30) / $other.def + 1
+message $self lance Aqua-Jet avec puissance!

@@ -1,0 +1,3 @@
+nom Cogner
+action $other.vie -= ($self.atk * 12.5 + 50) / $other.def + 1
+message $self cogne $other .
